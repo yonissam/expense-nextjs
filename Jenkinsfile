@@ -25,7 +25,7 @@ dockerImage = ''
         stage('Deploy') {
                 steps{
                 script {
-                    sh 'docker run -d --name expense-react -p 3010:3000 yoniss/nextjs'
+                    sh 'docker run -d --name expense-nextjs -p 3050:3000 yoniss/nextjs'
                 }
                 }
                 }
